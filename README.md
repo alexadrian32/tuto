@@ -14,5 +14,10 @@ para hacer una clave privada ssh:
 ssh-keygen -t ed25519 -C aasimionesei32@gmail.com
 ssh-add ./"clave ssh"
 
+en windows
+ssh-keygen -t ed25519 -C aasimionesei32@gmail.com
+Get-Service -Name ssh-agent | Set-Service -StartupType Manual    //en powershell
+Start-Service ssh-agent                                          //en powershell
+ssh-add ./"clave ssh"
 y ya puedes hacer un push
 
